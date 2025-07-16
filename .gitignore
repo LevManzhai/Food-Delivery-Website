@@ -1,0 +1,45 @@
+# IntelliJ IDEA
+/.idea/workspace.xml
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/modules.xml
+*.iws
+*.iml
+# Node.js / npm
+node_modules/
+package-lock.json
+npm-debug.log
+# Build and distribution
+/dist/
+/build/
+/out/
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+# Dependency directories
+/bower_components/
+# Cache and compiled files
+*.cache
+*.min.js
+*.min.css
+# Testing and coverage
+/coverage/
+/test-results/
+# Miscellaneous
+*.bak
+*.gho
+*.ori
+*.orig
+*.zip
+*.tar.gz
+*.tgz

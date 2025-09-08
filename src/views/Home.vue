@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Banner -->
     <div class="banner">
-      <img src="/img/banner1.png" alt="Banner" class="fullwidth-img">
+      <img src="../../public/img/banner1.png" alt="Banner" class="fullwidth-img">
     </div>
     
     <!-- Navigation -->

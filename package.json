@@ -4,6 +4,8 @@
   "description": "Food cards app with dynamic details pages",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {

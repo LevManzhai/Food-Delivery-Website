@@ -113,25 +113,25 @@ export default {
           id: 101,
           name: 'PINEAPPLE KVASS',
           price: 13,
-          img: './assets/img/food1-cold.png'
+          img: './assets/img/foot1-cold.213a2dff.png'
         },
         {
           id: 102,
           name: 'GRISSINI',
           price: 16,
-          img: './assets/img/food2-cold.png'
+          img: './assets/img/food2-cold.27bc83d7.png'
         },
         {
           id: 103,
           name: 'PEPPERONI PIZZA',
           price: 18,
-          img: './assets/img/food1-hot.png'
+          img: './assets/img/food1-hot.213a2dff.png'
         },
         {
           id: 104,
           name: 'MEAT DISH',
           price: 22,
-          img: './assets/img/food1-meat.png'
+          img: './assets/img/food1-meat.213a2dff.png'
         }
       ]
     }

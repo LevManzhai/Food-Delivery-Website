@@ -183,7 +183,7 @@ const related = computed(() => {
 })
 
 // map
-const mapUrl = './img/map.png'
+const mapUrl = '/img/map.png'
 
 import cartStore from '../store/cart.js'
 

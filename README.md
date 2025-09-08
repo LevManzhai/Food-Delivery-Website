@@ -2,6 +2,8 @@
 
 A modern, responsive food delivery website built with Vue.js, featuring a beautiful UI, interactive product catalog, and seamless shopping experience.
 
+[Live Demo](https://levmanzhai.github.io/Food-Delivery-Website/)  
+
 ## ✨ Features
 
 ### 🎨 **Modern Design & UI/UX**
@@ -170,5 +172,6 @@ This project is proprietary software. All rights reserved. This work is protecte
 Created with ❤️ for modern food delivery experiences.
 
 ---
+
 
 **Technologies**: Vue.js • CSS3 • JavaScript • Responsive Design • E-commerce

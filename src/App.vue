@@ -62,7 +62,7 @@
                  <button type="button" class="scroll-top" aria-label="To top" title="To top" @click="scrollToTopSmooth">▲</button>
 
         <div class="footer-left">
-          <div class="footer-logo">LOGOS</div>
+          <div class="footer-logo">FOOD DELIVERY</div>
                      <div class="footer-copy">
              © LLC «CAFE»<br>
              All rights reserved, 2010–2020

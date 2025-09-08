@@ -86,7 +86,7 @@ import './Cart.css'
 import { useRouter } from 'vue-router'
 
 // Import images to get hashed filenames
-import foot1Cold from '../../public/img/foot1-cold.png'
+import food1Cold from '../../public/img/food1-cold.png'
 import food2Cold from '../../public/img/food2-cold.png'
 import food1Hot from '../../public/img/food1-hot.png'
 import food1Meat from '../../public/img/food1-meat.png'
@@ -113,31 +113,39 @@ export default {
     }
 
     const loadRecommendedItems = () => {
-      // Recommended products
+      // Recommended products - real items from the menu
       recommendedItems.value = [
         {
-          id: 101,
-          name: 'PINEAPPLE KVASS',
+          id: '1',
+          name: 'Lamb',
           price: 13,
-          img: foot1Cold
+          img: food1Cold,
+          description: 'Stuffed with buckwheat porridge, dried apricots, orange and green apple',
+          weight: 225
         },
         {
-          id: 102,
-          name: 'GRISSINI',
+          id: '2',
+          name: 'Turkey bird',
           price: 16,
-          img: food2Cold
+          img: food2Cold,
+          description: 'Stuffed with buckwheat porridge, dried apricots, orange and green apple',
+          weight: 150
         },
         {
-          id: 103,
-          name: 'PEPPERONI PIZZA',
-          price: 18,
-          img: food1Hot
+          id: 'hot-3',
+          name: 'Lamb',
+          price: 13,
+          img: food1Hot,
+          description: 'Stuffed with buckwheat porridge, dried apricots, orange and green apple',
+          weight: 225
         },
         {
-          id: 104,
-          name: 'MEAT DISH',
-          price: 22,
-          img: food1Meat
+          id: 'meat-1',
+          name: 'Lamb',
+          price: 13,
+          img: food1Meat,
+          description: 'Stuffed with buckwheat porridge, dried apricots, orange and green apple',
+          weight: 225
         }
       ]
     }

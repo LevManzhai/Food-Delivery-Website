@@ -263,7 +263,7 @@ import './Home.css'
 // Use existing images from /img as placeholders/icons (icons in squares are now emoji)
 
 // Always use map.png from public/img - available by absolute path
-const mapUrl = '/img/map.png'
+const mapUrl = 'img/map.png'
 
 // Sort by categories
 const coldStarters = foods.filter(

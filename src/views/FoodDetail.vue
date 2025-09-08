@@ -182,8 +182,9 @@ const related = computed(() => {
   return filtered.slice(0, 8)
 })
 
-// map
-const mapUrl = 'img/map.png'
+// Import map image to get hashed filename
+import mapImage from '../../public/img/map.png'
+const mapUrl = mapImage
 
 import cartStore from '../store/cart.js'
 

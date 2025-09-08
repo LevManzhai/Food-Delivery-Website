@@ -85,6 +85,12 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import './Cart.css'
 import { useRouter } from 'vue-router'
 
+// Import images to get hashed filenames
+import foot1Cold from '../../public/img/foot1-cold.png'
+import food2Cold from '../../public/img/food2-cold.png'
+import food1Hot from '../../public/img/food1-hot.png'
+import food1Meat from '../../public/img/food1-meat.png'
+
 export default {
   name: 'Cart',
   setup() {
@@ -113,25 +119,25 @@ export default {
           id: 101,
           name: 'PINEAPPLE KVASS',
           price: 13,
-          img: './assets/img/foot1-cold.213a2dff.png'
+          img: foot1Cold
         },
         {
           id: 102,
           name: 'GRISSINI',
           price: 16,
-          img: './assets/img/food2-cold.27bc83d7.png'
+          img: food2Cold
         },
         {
           id: 103,
           name: 'PEPPERONI PIZZA',
           price: 18,
-          img: './assets/img/food1-hot.213a2dff.png'
+          img: food1Hot
         },
         {
           id: 104,
           name: 'MEAT DISH',
           price: 22,
-          img: './assets/img/food1-meat.213a2dff.png'
+          img: food1Meat
         }
       ]
     }

@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Banner -->
     <div class="banner">
-      <img src="../../public/img/banner1.png" alt="Banner" class="fullwidth-img">
+      <img :src="bannerImage" alt="Banner" class="fullwidth-img">
     </div>
     
     <!-- Navigation -->
@@ -262,8 +262,10 @@ import './Home.css'
 
 // Use existing images from /img as placeholders/icons (icons in squares are now emoji)
 
-// Always use map.png from public/img - available by absolute path
-const mapUrl = 'img/map.png'
+// Import images to get hashed filenames
+import mapImage from '../../public/img/map.png'
+import bannerImage from '../../public/img/banner1.png'
+const mapUrl = mapImage
 
 // Sort by categories
 const coldStarters = foods.filter(

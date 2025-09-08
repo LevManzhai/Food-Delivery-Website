@@ -82,7 +82,6 @@
 
 .products-container {
   margin: 0 auto;
-  padding: 0 15px;
   margin-bottom: 40px;
 }
 
@@ -401,9 +400,7 @@
     margin: 35px 0 18px;
   }
   
-  .products-container {
-    padding: 0 8px;
-  }
+  
   
   .cafe-section {
     flex-direction: column;

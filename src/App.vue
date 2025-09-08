@@ -7,7 +7,7 @@
           <span class="search-icon">🔍</span>
           <input type="text" placeholder="Enter delivery address">
         </div>
-        <div class="phone">Contacts: +44 (78) 93103042</div>
+        <a href="tel:+447893103042" class="phone">Contacts: +44 (78) 93103042</a>
         <router-link to="/cart" class="cart">
           Cart 🛒
           <span v-if="cartItemCount > 0">{{ cartItemCount }}</span>
@@ -39,7 +39,7 @@
             <div class="mobile-phone-icon">📞</div>
             <div class="mobile-phone-content">
               <span class="mobile-phone-label">Contacts:</span>
-              <span class="mobile-phone-number">+44 (78) 93103042</span>
+              <a href="tel:+447893103042" class="mobile-phone-number">+44 (78) 93103042</a>
             </div>
           </div>
           

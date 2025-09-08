@@ -10,7 +10,7 @@
     <section class="product-hero">
       <div class="hero-left">
         <div class="hero-image-wrap">
-          <img :src="food?.img || food?.image || '/img/food1-hot.png'" :alt="food?.name || 'Food item'" class="hero-image" />
+          <img :src="food?.img || food?.image || './img/food1-hot.png'" :alt="food?.name || 'Food item'" class="hero-image" />
         </div>
       </div>
 
@@ -183,7 +183,7 @@ const related = computed(() => {
 })
 
 // map
-const mapUrl = '/img/map.png'
+const mapUrl = './img/map.png'
 
 import cartStore from '../store/cart.js'
 

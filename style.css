@@ -44,6 +44,43 @@
     font-style: normal;
 }
 
+/* ===== PRODUCTS SECTION STYLES ===== */
+.products {
+  margin: 40px 0;
+  padding: 0;
+}
+
+.products .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.products .section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.products .products-container {
+  margin: 0 0 40px 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.products .products-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  margin: 40px 0;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* ===== GLOBAL PRODUCT CARD STYLES ===== */
 .product-card {
   background: #4E4948;
@@ -120,12 +157,6 @@
   margin-top: 8px;
 }
 
-.card-divider {
-  height: 1px;
-  background: rgba(255,255,255,0.12);
-  margin: 10px 0;
-  flex: 0 0 auto;
-}
 
 .bottom-buttons {
   display: flex;
@@ -135,6 +166,9 @@
   padding: 12px 14px;
   background: transparent;
   flex: 0 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 10px;
+  padding-top: 22px;
 }
 
 .bottom-buttons h3 {
@@ -251,11 +285,49 @@ header .container {
     margin: 0 20px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
 .phone::before {
     content: "📞";
-    margin-right: 5px;
+    margin-right: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(121, 178, 130, 0.1), transparent);
+    transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #79b282, #6ba373);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(121, 178, 130, 0.3);
+}
+
+.phone:hover::before {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.phone:hover::after {
+    left: 100%;
+}
+
+.phone:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(121, 178, 130, 0.2);
 }
 
 .cart {
@@ -370,7 +442,8 @@ header .container {
 }
 
 
-.nav-menu a {
+.nav-menu a,
+.nav-menu button {
     position: relative;
     color: #A9A9A9;
     text-decoration: none;
@@ -378,6 +451,10 @@ header .container {
     transition: color 0.3s;
     display: inline-block;
     padding-bottom: 6px; /* room for underline */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .nav-menu a .nav-link-text {
@@ -403,7 +480,9 @@ header .container {
 }
 
 .nav-menu a.active,
-.nav-menu a:focus {
+.nav-menu a:focus,
+.nav-menu button.active,
+.nav-menu button:focus {
     color: #FFFFFF;
     font-weight: 700;
 }
@@ -418,7 +497,9 @@ header .container {
 
 /* Animate bar on hover for feedback if desired */
 .nav-menu a:hover .nav-underline:not(:only-child),
-.nav-menu a:focus .nav-underline:not(:only-child) {
+.nav-menu a:focus .nav-underline:not(:only-child),
+.nav-menu button:hover .nav-underline:not(:only-child),
+.nav-menu button:focus .nav-underline:not(:only-child) {
     opacity: 0.66;
     transform: translateX(-50%) scaleX(1);
 }
@@ -466,8 +547,10 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
     margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 10px;
 }
 
 .bottom-buttons h3 {
@@ -565,7 +648,7 @@ header .container {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px){
   .product-card {
     width: 100% !important;
     min-width: 200px !important;
@@ -577,6 +660,22 @@ header .container {
     padding: 0 10px !important;
   }
 }
+
+/* For screens 1600px-2500px - 5 cards with smaller width */
+@media (min-width: 1600px) and (max-width: 3000px) {
+  .product-card {
+    width: 400px !important;
+    min-width: 180px !important;
+  }
+  
+  .swiper-slide {
+    width: 20% !important;
+    padding: 0 5px !important;
+  }
+}
+
+/* For screens larger than 2500px - back to 4 cards */
+
 
 /* ===== CONTACT ADAPTATION FOR MOBILE DEVICES ===== */
 
@@ -718,9 +817,11 @@ header .container {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 12px 14px;
+    padding: 22px 14px 12px 14px;
     background: transparent;
     flex: 0 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 10px;
 }
 
 /* button inside */

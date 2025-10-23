@@ -186,6 +186,7 @@ body {
 @media (max-width: 750px) {
   .mobile-header-right {
     display: flex !important;
+    order: 2;
   }
   
   .burger-menu {
@@ -201,6 +202,11 @@ body {
   .header-inner {
     justify-content: space-between !important;
     padding: 0 20px !important;
+    flex-direction: row !important;
+  }
+  
+  .header-inner .logo {
+    order: 1;
   }
   
   .site-header {

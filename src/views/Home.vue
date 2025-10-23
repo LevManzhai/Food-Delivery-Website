@@ -283,9 +283,8 @@ import './Home.css'
 // Use existing images from /img as placeholders/icons (icons in squares are now emoji)
 
 // Import images to get hashed filenames
-import mapImage from '../../public/img/map.png'
 import bannerImage from '../../public/img/banner1.png'
-const mapUrl = mapImage
+const mapUrl = './img/map.png'
 
 // Sort by categories
 const coldStarters = foods.filter(
